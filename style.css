@@ -1,0 +1,204 @@
+/* ===== General Styles ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background: #2e7d32;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
+/* ===== Navigation ===== */
+nav {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background: #2e7d32;
+  border-radius: 5px;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 40px 20px;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2e7d32;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  background: #e6f2e6;
+  padding: 50px 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: white;
+  padding: 25px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #2e7d32;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #1b4f1b;
+  transform: scale(1.05);
+}
+
+/* ===== Forms ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form button {
+  width: 220px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* ===== About Team ===== */
+.about-team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-member {
+  margin: 10px;
+  text-align: center;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* ===== Links Hover Effect ===== */
+a {
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .about-team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    padding: 40px 10px;
+  }
+
+  .card {
+    margin: 15px auto;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
